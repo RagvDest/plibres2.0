@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Demostración </title>
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.2 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-ims" id="exe-node-5"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Demostración</h1></div></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id4">
+<div class="iDevice emphasis0">
+<div id="ta4_85" class="block iDevice_content">
+<p>El algoritmo trabaja de la siguiente forma:</p>
+<ul>
+<li>Elegir un elemento de la lista de elementos a ordenar, al que llamaremos<span> </span><b>pivote</b>.</li>
+<li>Resituar los demás elementos de la lista a cada lado del pivote, de manera que a un lado queden todos los menores que él, y al otro los mayores. Los elementos iguales al pivote pueden ser colocados tanto a su derecha como a su izquierda, dependiendo de la implementación deseada. En este momento, el pivote ocupa exactamente el lugar que le corresponderá en la lista ordenada.</li>
+<li>La lista queda separada en dos sublistas, una formada por los elementos a la izquierda del pivote, y otra por los elementos a su derecha.</li>
+<li>Repetir este proceso de forma recursiva para cada sublista mientras éstas contengan más de un elemento. Una vez terminado este proceso todos los elementos estarán ordenados.</li>
+</ul>
+<p>Como se puede suponer, la eficiencia del algoritmo<a href="https://es.wikipedia.org/wiki/Eficiencia_Algor%C3%ADtmica" class="mw-redirect" title="Eficiencia Algorítmica"></a><span> </span>depende de la posición en la que termine el pivote elegido.</p>
+<ul>
+<li>En el mejor caso, el pivote termina en el centro de la lista, dividiéndola en dos sublistas de igual tamaño. En este caso, el orden de<span> complejidad del algoritmo es <strong>O</strong></span><b>(n·log n)</b>.</li>
+<li>En el peor caso, el pivote termina en un extremo de la lista. El orden de complejidad del algoritmo es entonces de<span> </span><b>O(n²)</b>. El peor caso dependerá de la implementación del algoritmo, aunque habitualmente ocurre en listas que se encuentran ordenadas, o casi ordenadas. Pero principalmente depende del pivote, si por ejemplo el algoritmo implementado toma como pivote siempre el primer elemento del<span> array</span>, y el array que le pasamos está ordenado, siempre va a generar a su izquierda un array vacío, lo que es ineficiente.</li>
+</ul>
+<ul>
+<li>En el caso promedio, el orden es<span> </span><b>O(n·log n)</b>.</li>
+</ul>
+<p>No es extraño, pues, que la mayoría de optimizaciones que se aplican al algoritmo se centren en la elección del<span> </span><b>pivote</b>.</p>
+<p></p>
+<p>Solución:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" alt="Solución" width="441" height="337" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="my_js.js"></script></body></html>
